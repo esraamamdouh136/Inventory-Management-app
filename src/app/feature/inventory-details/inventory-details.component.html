@@ -1,0 +1,32 @@
+<div class="p-4">
+    <h1 class="text-xl font-bold mb-4">Inventory Detail</h1>
+
+    <div *ngIf="item" class="space-y-2">
+      <label>Name:</label>
+      <input class="border p-1 rounded w-full" [(ngModel)]="item.name" />
+      
+      <label>Category:</label>
+      <input class="border p-1 rounded w-full" [(ngModel)]="item.category" />
+
+      <label>Stock Quantity:</label>
+      <input class="border p-1 rounded w-full" type="number" [(ngModel)]="item.stock" />
+
+      <label>Last Updated:</label>
+      <input class="border p-1 rounded w-full" type="date" [(ngModel)]="item.lastUpdated" />
+
+      <div class="mt-4 space-x-2">
+        <button
+          class="bg-blue-500 text-white px-3 py-2 rounded"
+          (click)="updateItem()"
+        >
+          Save
+        </button>
+        <button
+          class="bg-gray-300 px-3 py-2 rounded"
+          (click)="goBack()"
+        >
+          Cancel
+        </button>
+      </div>
+    </div>
+  </div>

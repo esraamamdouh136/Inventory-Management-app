@@ -1,0 +1,11 @@
+{
+  "inventory": [
+    {
+      "id": "284d",
+      "name": "t-shirt",
+      "category": "Clothes ",
+      "stock": 20,
+      "lastUpdated": "2024-12-25"
+    }
+  ]
+}
