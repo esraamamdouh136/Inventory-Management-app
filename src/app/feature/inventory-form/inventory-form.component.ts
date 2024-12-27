@@ -16,9 +16,9 @@ import { InventoryItem } from '../../shared/models/item.model';
 export class InventoryFormComponent {
   itemForm = this.fb.group({
     name: ['', Validators.required],
-    category: [''],
+    category: ['' , Validators.required],
     stock: [0, [Validators.required, Validators.min(0)]],
-    lastUpdated: [''],
+    lastUpdated: ['' , Validators.required],
   });
 
   constructor(private fb: FormBuilder, private store: Store, private router: Router) {}
